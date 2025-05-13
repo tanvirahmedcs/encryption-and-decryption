@@ -1,0 +1,23 @@
+File Encryption Tool Usage Guide
+
+1. Compile the program:
+   gcc -o encryptor encryptor.c
+
+2. Run the program with the following syntax:
+   ./encryptor <encrypt|decrypt> <input_file> <output_file> <key>
+
+   - encrypt or decrypt: Choose the mode.
+   - input_file: Path to the file to encrypt or decrypt.
+   - output_file: Path where the output will be saved.
+   - key: The encryption/decryption key (a string).
+
+Example:
+   To encrypt a file:
+   ./encryptor encrypt secret.txt secret.enc mypassword
+
+   To decrypt a file:
+   ./encryptor decrypt secret.enc secret_decrypted.txt mypassword
+
+Notes:
+- The tool uses a simple XOR cipher and is not suitable for strong security needs.
+- Use a strong and secret key to protect your data.
